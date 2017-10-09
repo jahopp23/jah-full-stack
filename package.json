@@ -1,0 +1,34 @@
+{
+  "name": "jah-fullstack",
+  "version": "1.0.0",
+  "description": "John A. Hopper Full Stack Development",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jahopp23/jah-fullstack.git"
+  },
+  "keywords": [
+    "full",
+    "stack",
+    "programmer",
+    "developer",
+    "web",
+    "designer",
+    "dallas"
+  ],
+  "author": "John A. Hopper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jahopp23/jah-fullstack/issues"
+  },
+  "homepage": "https://github.com/jahopp23/jah-fullstack#readme",
+  "devDependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.1",
+    "typeit": "^4.4.1"
+  }
+}
