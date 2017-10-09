@@ -3,37 +3,119 @@
 
 <head> 
 
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="/node_modules/typed.js/lib/typed.min.js"></script>
 
-<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script> 
+  <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script> 
+
+  <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script> 
+
+<script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
 
 <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
 
 <link href="https://fonts.googleapis.com/css?family=Modak" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
+
+<script>
+$(document).ready(function(){
+    $('.type-it').typeIt({
+     
+       speed:75,
+       autoStart: true,
+       startDelete: false,
+       breakDelay: true,
+
+
+       
+   })
+
+  
+});
+</script>
 <style>
 .header {
 	text-shadow: 0px 0px 0 #000,1px 1px 0 #000,2px 2px 0 #000,4px 3px 0, 5px 4px 0 #000, 6px 5px 0 #000, 5px 5px 0 #000, 6px 6px 0 #000, 7px 7px 0 #000, 8px 8px 0 #000, 8px 8px 0 #000, 9px 9px 0 #000, 10px 10px 0 #000;
-	font-size: 5.00em; 
+	
 	font-family: 'Modak', cursive;
 	z-index:1;
-	margin-left: 0.250em;
+    text-decoration: none;
+	
+    font-size: 6.00em;
+    text-align: center;
+    opacity: 0.90
 
 
 }
 
+.navbar p{
+    font-size: 1.0em;
+   
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Pontano Sans';
+    position:relative;
+    top: -1.70em;
+    left: 1.00em;
+}
+
+
+.header p{
+    font-family: 'Pontano Sans';
+}
+
+.container{
+
+    
+}
+
+.type-title{
+    }
+
  button{
 	border-color: white;
-	text-align: center;
+    color: white;
+
+	
+}
+
+.dropdown .btn-default {
+    border-color: white;
+    margin-left: 1.00em;
+    background-color: white;
+    color: white;
+}
+
+.btn-primary{
+    background-color: white;
+    border-color: white;
+
+}
+
+.btn-primary p{
+    color: black;
 }
 
 section .body-panel .button{
 	text-align: center;
+
+}
+
+
+
+
+section{
+    text-align: left;
 }
 
 
 
  .panel-default{
 	width: 100%;
+    text-align: left;
 }
 
 .panel-default p {
@@ -41,90 +123,182 @@ display: inline-block;
 margin-left: -10.5em;
 position: relative;
 bottom: -25px;
-font-size: 0.75em;
+font-size: 0.90em;
 }
-
 .panel-default h1{
 	display:inline-block;
+    font-size: 6.00em;
+
+
 }
 
 
 
 
 .header{
-    -webkit-animation: color-change 1s infinite;
-    -moz-animation: color-change 1s infinite;
-    -o-animation: color-change 1s infinite;
-    -ms-animation: color-change 1s infinite;
-    animation: color-change 1s infinite;
+    -webkit-animation: color-change 0.3s infinite;
+    -moz-animation: color-change 0.3s infinite;
+    -o-animation: color-change 0.3s infinite;
+    -ms-animation: color-change 0.3s infinite;
+    animation: color-change 0.3s infinite;
 }
 
 @-webkit-keyframes color-change {
     0% { color: red; }
-    50% { color: blue; }
-    100% { color: red; }
+    50% { color: #8000FF;}
+    100% { color: #00FF00; }
 
 
 }
 @-moz-keyframes color-change {
-    25% { color: red; }
-    % { color: blue; }
-    100% { color: red; }
+    0% { color: red; }
+    50% { color: #8000FF; }
+    100% { color:#00FF00; }
 }
 @-ms-keyframes color-change {
     0% { color: red; }
-    50% { color: blue; }
-    100% { color: red; }
+    50% { color: #8000FF; }
+    100% { color: #00FF00; }
 }
 @-o-keyframes color-change {
     0% { color: red; }
-    50% { color: blue; }
-    100% { color: red; }
+    50% { color: #8000FF;}
+    100% { color: #00FF00; }
 }
 @keyframes color-change {
-    0% { color: red; }
-    50% { color: blue; }
-    100% { color: red; }
+    0% { color: pink; }
+    50% { color: #8000FF; }
+    100% { color: #00FF00;}
 }
+
+.navbar a h1 {
+    text-decoration: none;
+}
+.navbar{
+    background-color: white;
+    }
+
+
+
+
+.navbar a:hover {
+    text-decoration: none;
+}
+
+.terminal {
+   
+  border-radius: 1.00em;
+ 
+
+   
+   
+   
+
+   
+
+}
+
+.terminal p{
+/*    color: #2EFE2E;
+    font-size: 1.00em;
+    width: 300px;
+    padding: 1.00em;
+    margin-top: 2.00em;
+    font-family: Pontano Sans;
+    font-weight: bold;
+    display: inline-block;*/
+}
+
+.glyphicon {
+    color: white;
+    font-size: 1.00em;
+    position:relative;
+    top: 3.20em;
+    left: 1.55em;
+}
+
+.terminal-container{
+    width: 100%;
+    height:300px;
+    color: black;
+    text-align: center;
+}
+
+.terminal-container p{
+ /*       color: #2EFE2E;
+    font-size: 1.00em;
+    width: 300px;
+    padding: 1.00em;
+    margin-top: 2.00em;
+    font-family: Pontano Sans;
+    font-weight: bold;
+    display: inline-block;*/
+}
+
+.type-it{
+    text-align: center;
+    font-family: 'Pontano Sans';
+    font-weight: bold;
+    font-size: 1.00em;
+    margin: 1.00em;
+
+    
+}
+
+.type-it p{
+    margin: 10px 20px;
+    padding:1.00em;
+
+}
+
+
 
 
 </style>
+
 </head>
 
 <body> 
 
 
-<div class="panel panel-default">
-
-<h1 class="header">JAH</h1>
-<p>development & design</p>
-
-
+<div class="navbar">
+  <div class="navbar-inner">
+    <a class="brand" href="#"><h1 class="header">JAH</h1></a>
+    
+    <p>full stack | ui/ux</p>
+    <ul class="nav">
+      
+    </ul>
+  </div>
 </div>
 
-<section class="body-panel">
-
-<div class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Dropdown
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-  </ul>
-</div>
-
-</section>
 
 
-</body>
 
 
-</body>
+
+
+<!-- <div class="terminal"> -->
+
+
+<!-- <div class="terminal-container"> -->
+<!-- <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span> -->
+
+<span class="type-it"><p>John Allen Hopper transforms concepts into reality with coding! He specializes in full stack web development & front-end ui/ux. </p><p> © 2017</p></span>
+<!-- </div> -->
+<!-- </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 
