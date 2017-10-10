@@ -8,10 +8,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="/node_modules/typed.js/lib/typed.min.js"></script>
+  <script src="/node_modules/bootstrap/dist/css/bootstrap.min.css"></script>
+  <script src="/node_modules/font-awesome/css/font-awesome.min.css"></script>
+
+  <script src="https://use.fontawesome.com/99b1482ae9.js"></script>
 
   <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script> 
 
   <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script> 
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
 
@@ -19,12 +24,14 @@
 
 <link href="https://fonts.googleapis.com/css?family=Modak" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 
 <script>
 $(document).ready(function(){
     $('.type-it').typeIt({
      
-       speed:75,
+       speed:40,
        autoStart: true,
        startDelete: false,
        breakDelay: true,
@@ -36,7 +43,17 @@ $(document).ready(function(){
   
 });
 </script>
+<script>
+$(document).ready(function(){
+	$('.terminal-container').draggable({containment: "parent"});
+})
+
+</script>
 <style>
+
+
+
+
 .header {
 	text-shadow: 0px 0px 0 #000,1px 1px 0 #000,2px 2px 0 #000,4px 3px 0, 5px 4px 0 #000, 6px 5px 0 #000, 5px 5px 0 #000, 6px 6px 0 #000, 7px 7px 0 #000, 8px 8px 0 #000, 8px 8px 0 #000, 9px 9px 0 #000, 10px 10px 0 #000;
 	
@@ -49,6 +66,10 @@ $(document).ready(function(){
     opacity: 0.90
 
 
+}
+
+.fa-github-square {
+	margin-left: 5.00em;
 }
 
 .navbar p{
@@ -136,46 +157,46 @@ font-size: 0.90em;
 
 
 .header{
-    -webkit-animation: color-change 0.3s infinite;
-    -moz-animation: color-change 0.3s infinite;
-    -o-animation: color-change 0.3s infinite;
-    -ms-animation: color-change 0.3s infinite;
-    animation: color-change 0.3s infinite;
+    -webkit-animation: color-change 0.1s infinite;
+    -moz-animation: color-change 0.1s infinite;
+    -o-animation: color-change 0.1s infinite;
+    -ms-animation: color-change 0.1s infinite;
+    animation: color-change 0.1s infinite;
 }
 
 @-webkit-keyframes color-change {
     0% { color: red; }
-    50% { color: #8000FF;}
-    100% { color: #00FF00; }
+    50% { color: #FF0040;}
+    100% { color: #FFFF00; }
 
 
 }
 @-moz-keyframes color-change {
     0% { color: red; }
-    50% { color: #8000FF; }
-    100% { color:#00FF00; }
+    50% { color: #FF0040; }
+    100% { color:#FFFF00; }
 }
 @-ms-keyframes color-change {
     0% { color: red; }
-    50% { color: #8000FF; }
-    100% { color: #00FF00; }
+    50% { color: #FF0040; }
+    100% { color: #FFFF00; }
 }
 @-o-keyframes color-change {
     0% { color: red; }
-    50% { color: #8000FF;}
-    100% { color: #00FF00; }
+    50% { color: #FF0040;}
+    100% { color: #FFFF00; }
 }
 @keyframes color-change {
     0% { color: pink; }
-    50% { color: #8000FF; }
-    100% { color: #00FF00;}
+    50% { color: #FF0040; }
+    100% { color: #FFFF00;}
 }
 
 .navbar a h1 {
     text-decoration: none;
 }
 .navbar{
-    background-color: white;
+    background-color: #eee;
     }
 
 
@@ -212,17 +233,27 @@ font-size: 0.90em;
 .glyphicon {
     color: white;
     font-size: 1.00em;
-    position:relative;
-    top: 3.20em;
-    left: 1.55em;
+    position: relative;
+    left: -8.00em;
+    text-align: left;
 }
 
 .terminal-container{
-    width: 100%;
-    height:300px;
-    color: black;
+    width: 80%;
+    height: 300px;
+    background-color: black;
     text-align: center;
+    border-top-style: solid;
+    border-top-color: #eee;
+    border-top-width: 20px;
+    margin-left: 2.00em;
+    border-radius: 1.00em;
+    box-shadow: 3px 3px #eee;
+    margin-right: 2.00em;
 }
+
+
+
 
 .terminal-container p{
  /*       color: #2EFE2E;
@@ -236,20 +267,73 @@ font-size: 0.90em;
 }
 
 .type-it{
-    text-align: center;
-    font-family: 'Pontano Sans';
+    text-align: left;
+   
     font-weight: bold;
-    font-size: 1.00em;
+
     margin: 1.00em;
+
+    
 
     
 }
 
 .type-it p{
     margin: 10px 20px;
-    padding:1.00em;
+    
+    color: #00FF40;
+    font-weight: bolder;
+    font-size: 1.00em;
+     font-family: 'Inconsolata';
+
+
 
 }
+
+.terminal-parent{
+	width: 100%;
+	height: 350px;
+}
+
+.circle{
+	border-radius: 50%;
+	height: 10px;
+	width: 10px;
+	background-color: red;
+	position: relative;
+	top: -1.00em;
+	left: 1.00em;
+}
+
+.circle2{
+	border-radius: 50%;
+	height: 10px;
+	width: 10px;
+	background-color: yellow; 
+	position: relative;
+	top: -1.78em;
+	left: 2.00em;
+}
+
+.circle3{
+	border-radius: 50%;
+	height: 10px;
+	width: 10px;
+	background-color: green; 
+	position: relative;
+	top: -2.50em;
+	left: 3.00em;
+}
+
+footer {
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
 
 
 
@@ -265,7 +349,7 @@ font-size: 0.90em;
   <div class="navbar-inner">
     <a class="brand" href="#"><h1 class="header">JAH</h1></a>
     
-    <p>full stack | ui/ux</p>
+    <p>Full Stack Web | UI/UX</p>
     <ul class="nav">
       
     </ul>
@@ -284,21 +368,40 @@ font-size: 0.90em;
 <!-- <div class="terminal-container"> -->
 <!-- <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span> -->
 
-<span class="type-it"><p>John Allen Hopper transforms concepts into reality with coding! He specializes in full stack web development & front-end ui/ux. </p><p> © 2017</p></span>
+<div class="terminal-parent">
+<div class="terminal-container">
+<div class="circle">
+</div>
+<div class="circle2">
+</div>
+<div class="circle3">
+</div>
+<div class="col-lg-9">
+<span class="type-it"><p>~/$ John Allen Hopper transforms concepts into reality with coding! Specializing in full stack web development & front-end UI/UX (user interface/experience).</p>
+<p>~/$ Favorite Languages: HTML, CSS, JavaScript, Bash, SQL, Ruby, and Python.</p>
+<p>~/$ Favorite Frameworks: MEAN stack, Node.js/Express, Ruby on Rails.</p>
+<p>~/$ Education: University of North Texas (B.A. Anthropology [2014]), Coding Dojo Dallas (Full Stack Web Development [2016]).
+</p>
+<p>~/$ Experience: Freelance; Professional Agency.</p>
+
+</span></div>
+</div>
+</div>
 <!-- </div> -->
 <!-- </div> -->
 
 
 
 
+<div class="col-md-4"></div>
+<div class="col-md-4"></div>
+<div class="col-md-4"></div>
 
 
 
 
 
-
-
-
+<footer class="fixed-bottom"> © John Allen Hopper, 2017.</footer>
 
 </body>
 

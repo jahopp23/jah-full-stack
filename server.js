@@ -4,7 +4,7 @@ var path = require('path');
 
 var app = express();
 
-app.use(express.static(path.join(__dirname + '/static')));
+app.use(express.static(path.join(__dirname + '/')));
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(bodyParser.json());
